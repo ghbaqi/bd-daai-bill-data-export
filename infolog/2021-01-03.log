@@ -1,0 +1,47 @@
+[2021-01-03 10:12:41.041] [com.zaxxer.hikari.pool.HikariPool$HouseKeeper] [HikariPool-1 housekeeper] [787] [WARN ] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11h54m34s23ms916µs600ns).
+[2021-01-03 10:12:44.044] [com.mongodb.diagnostics.logging.SLF4JLogger] [cluster-ClusterId{value='5ff07d710f83b413ee4ecfc4', description='null'}-47.97.252.215:27017] [76] [INFO ] Exception in monitor thread while connecting to server 47.97.252.215:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:127)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Software caused connection abort: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:63)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+[2021-01-03 10:12:54.054] [com.mongodb.diagnostics.logging.SLF4JLogger] [cluster-ClusterId{value='5ff07d710f83b413ee4ecfc4', description='null'}-47.97.252.215:27017] [71] [INFO ] Opened connection [connectionId{localValue:8, serverValue:82783}] to 47.97.252.215:27017
+[2021-01-03 10:12:54.054] [com.mongodb.diagnostics.logging.SLF4JLogger] [cluster-ClusterId{value='5ff07d710f83b413ee4ecfc4', description='null'}-47.97.252.215:27017] [71] [INFO ] Monitor thread successfully connected to server with description ServerDescription{address=47.97.252.215:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15827500, setName='rs0', canonicalAddress=47.97.252.215:27017, hosts=[47.97.252.215:27017], passives=[], arbiters=[], primary='47.97.252.215:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000007, setVersion=94922, lastWriteDate=Sun Jan 03 10:12:45 CST 2021, lastUpdateTimeNanos=182179363072700}
+[2021-01-03 12:11:47.047] [com.mongodb.diagnostics.logging.SLF4JLogger] [cluster-ClusterId{value='5ff07d710f83b413ee4ecfc4', description='null'}-47.97.252.215:27017] [71] [INFO ] Opened connection [connectionId{localValue:9, serverValue:83022}] to 47.97.252.215:27017
+[2021-01-03 12:12:57.057] [com.mongodb.diagnostics.logging.SLF4JLogger] [cluster-ClusterId{value='5ff07d710f83b413ee4ecfc4', description='null'}-47.97.252.215:27017] [71] [INFO ] Opened connection [connectionId{localValue:10, serverValue:83025}] to 47.97.252.215:27017
+[2021-01-03 12:13:57.057] [com.mongodb.diagnostics.logging.SLF4JLogger] [cluster-ClusterId{value='5ff07d710f83b413ee4ecfc4', description='null'}-47.97.252.215:27017] [71] [INFO ] Opened connection [connectionId{localValue:11, serverValue:83027}] to 47.97.252.215:27017
+[2021-01-03 13:36:58.058] [com.mongodb.diagnostics.logging.SLF4JLogger] [cluster-ClusterId{value='5ff07d710f83b413ee4ecfc4', description='null'}-47.97.252.215:27017] [76] [INFO ] Exception in monitor thread while connecting to server 47.97.252.215:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:562)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:447)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:298)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:258)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:33)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:103)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:60)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:444)
+	... 9 common frames omitted

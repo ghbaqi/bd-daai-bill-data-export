@@ -1,0 +1,81 @@
+[2020-11-02 18:42:27.027] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DaoTest on DESKTOP-M8DD9N1 with PID 15568 (started by ghbaq in E:\ppioGitProjects\bill-data-export)
+[2020-11-02 18:42:27.027] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[2020-11-02 18:42:28.028] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[2020-11-02 18:42:28.028] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 23ms. Found 0 MongoDB repository interfaces.
+[2020-11-02 18:42:29.029] [com.mongodb.diagnostics.logging.SLF4JLogger] [main] [71] [INFO ] Cluster created with settings {hosts=[47.97.252.215:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[2020-11-02 18:42:29.029] [com.mongodb.diagnostics.logging.SLF4JLogger] [cluster-ClusterId{value='5f9fe2953f63f914d1d32b71', description='null'}-47.97.252.215:27017] [71] [INFO ] Opened connection [connectionId{localValue:1, serverValue:32492}] to 47.97.252.215:27017
+[2020-11-02 18:42:29.029] [com.mongodb.diagnostics.logging.SLF4JLogger] [cluster-ClusterId{value='5f9fe2953f63f914d1d32b71', description='null'}-47.97.252.215:27017] [71] [INFO ] Monitor thread successfully connected to server with description ServerDescription{address=47.97.252.215:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17097501, setName='rs0', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000005, setVersion=94921, lastWriteDate=Mon Nov 02 18:42:23 CST 2020, lastUpdateTimeNanos=550164651591400}
+[2020-11-02 18:42:30.030] [com.ppio.data.bill.ExecutorConfig] [main] [22] [INFO ] start asyncServiceExecutor
+[2020-11-02 18:42:30.030] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [181] [INFO ] Initializing ExecutorService
+[2020-11-02 18:42:30.030] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [181] [INFO ] Initializing ExecutorService 'asyncServiceExecutor'
+[2020-11-02 18:42:32.032] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DaoTest in 5.208 seconds (JVM running for 6.786)
+[2020-11-02 18:42:32.032] [com.zaxxer.hikari.HikariDataSource] [async-service-4] [110] [INFO ] HikariPool-1 - Starting...
+[2020-11-02 18:42:32.032] [com.zaxxer.hikari.util.DriverDataSource] [async-service-4] [70] [WARN ] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+[2020-11-02 18:42:33.033] [com.zaxxer.hikari.HikariDataSource] [async-service-4] [123] [INFO ] HikariPool-1 - Start completed.
+[2020-11-02 18:43:06.006] [com.ppio.data.bill.MyTask] [async-service-5] [36] [INFO ]  start  date = 20201005 , machine ids size = 257
+[2020-11-02 18:43:06.006] [com.ppio.data.bill.MyTask] [async-service-3] [36] [INFO ]  start  date = 20201003 , machine ids size = 254
+[2020-11-02 18:43:06.006] [com.ppio.data.bill.MyTask] [async-service-4] [36] [INFO ]  start  date = 20201004 , machine ids size = 252
+[2020-11-02 18:43:06.006] [com.ppio.data.bill.MyTask] [async-service-2] [36] [INFO ]  start  date = 20201002 , machine ids size = 262
+[2020-11-02 18:43:06.006] [com.ppio.data.bill.MyTask] [async-service-1] [36] [INFO ]  start  date = 20201001 , machine ids size = 267
+[2020-11-02 18:43:07.007] [com.mongodb.diagnostics.logging.SLF4JLogger] [async-service-4] [71] [INFO ] Opened connection [connectionId{localValue:3, serverValue:32494}] to 47.97.252.215:27017
+[2020-11-02 18:43:07.007] [com.mongodb.diagnostics.logging.SLF4JLogger] [async-service-1] [71] [INFO ] Opened connection [connectionId{localValue:6, serverValue:32496}] to 47.97.252.215:27017
+[2020-11-02 18:43:07.007] [com.mongodb.diagnostics.logging.SLF4JLogger] [async-service-3] [71] [INFO ] Opened connection [connectionId{localValue:4, serverValue:32495}] to 47.97.252.215:27017
+[2020-11-02 18:43:07.007] [com.mongodb.diagnostics.logging.SLF4JLogger] [async-service-2] [71] [INFO ] Opened connection [connectionId{localValue:5, serverValue:32498}] to 47.97.252.215:27017
+[2020-11-02 18:43:07.007] [com.mongodb.diagnostics.logging.SLF4JLogger] [async-service-5] [71] [INFO ] Opened connection [connectionId{localValue:2, serverValue:32497}] to 47.97.252.215:27017
+[2020-11-02 18:43:39.039] [com.ppio.data.bill.MyTask] [async-service-5] [97] [INFO ] success  finish one day date = 20201005
+[2020-11-02 18:43:40.040] [com.ppio.data.bill.MyTask] [async-service-1] [97] [INFO ] success  finish one day date = 20201001
+[2020-11-02 18:43:40.040] [com.ppio.data.bill.MyTask] [async-service-4] [97] [INFO ] success  finish one day date = 20201004
+[2020-11-02 18:43:41.041] [com.ppio.data.bill.MyTask] [async-service-3] [97] [INFO ] success  finish one day date = 20201003
+[2020-11-02 18:43:43.043] [com.ppio.data.bill.MyTask] [async-service-2] [97] [INFO ] success  finish one day date = 20201002
+[2020-11-02 18:44:10.010] [com.ppio.data.bill.MyTask] [async-service-5] [36] [INFO ]  start  date = 20201006 , machine ids size = 251
+[2020-11-02 18:44:12.012] [com.ppio.data.bill.MyTask] [async-service-4] [36] [INFO ]  start  date = 20201008 , machine ids size = 252
+[2020-11-02 18:44:13.013] [com.ppio.data.bill.MyTask] [async-service-1] [36] [INFO ]  start  date = 20201007 , machine ids size = 251
+[2020-11-02 18:44:13.013] [com.ppio.data.bill.MyTask] [async-service-3] [36] [INFO ]  start  date = 20201009 , machine ids size = 255
+[2020-11-02 18:44:15.015] [com.ppio.data.bill.MyTask] [async-service-2] [36] [INFO ]  start  date = 20201010 , machine ids size = 254
+[2020-11-02 18:44:42.042] [com.ppio.data.bill.MyTask] [async-service-5] [97] [INFO ] success  finish one day date = 20201006
+[2020-11-02 18:44:44.044] [com.ppio.data.bill.MyTask] [async-service-1] [97] [INFO ] success  finish one day date = 20201007
+[2020-11-02 18:44:45.045] [com.ppio.data.bill.MyTask] [async-service-4] [97] [INFO ] success  finish one day date = 20201008
+[2020-11-02 18:44:46.046] [com.ppio.data.bill.MyTask] [async-service-3] [97] [INFO ] success  finish one day date = 20201009
+[2020-11-02 18:44:50.050] [com.ppio.data.bill.MyTask] [async-service-2] [97] [INFO ] success  finish one day date = 20201010
+[2020-11-02 18:45:12.012] [com.ppio.data.bill.MyTask] [async-service-5] [36] [INFO ]  start  date = 20201011 , machine ids size = 251
+[2020-11-02 18:45:15.015] [com.ppio.data.bill.MyTask] [async-service-1] [36] [INFO ]  start  date = 20201012 , machine ids size = 250
+[2020-11-02 18:45:16.016] [com.ppio.data.bill.MyTask] [async-service-4] [36] [INFO ]  start  date = 20201013 , machine ids size = 247
+[2020-11-02 18:45:17.017] [com.ppio.data.bill.MyTask] [async-service-3] [36] [INFO ]  start  date = 20201014 , machine ids size = 254
+[2020-11-02 18:45:19.019] [com.ppio.data.bill.MyTask] [async-service-2] [36] [INFO ]  start  date = 20201015 , machine ids size = 246
+[2020-11-02 18:45:46.046] [com.ppio.data.bill.MyTask] [async-service-1] [97] [INFO ] success  finish one day date = 20201012
+[2020-11-02 18:45:47.047] [com.ppio.data.bill.MyTask] [async-service-4] [97] [INFO ] success  finish one day date = 20201013
+[2020-11-02 18:45:48.048] [com.ppio.data.bill.MyTask] [async-service-5] [97] [INFO ] success  finish one day date = 20201011
+[2020-11-02 18:45:50.050] [com.ppio.data.bill.MyTask] [async-service-3] [97] [INFO ] success  finish one day date = 20201014
+[2020-11-02 18:45:52.052] [com.ppio.data.bill.MyTask] [async-service-2] [97] [INFO ] success  finish one day date = 20201015
+[2020-11-02 18:46:17.017] [com.ppio.data.bill.MyTask] [async-service-1] [36] [INFO ]  start  date = 20201016 , machine ids size = 239
+[2020-11-02 18:46:19.019] [com.ppio.data.bill.MyTask] [async-service-4] [36] [INFO ]  start  date = 20201017 , machine ids size = 237
+[2020-11-02 18:46:22.022] [com.ppio.data.bill.MyTask] [async-service-5] [36] [INFO ]  start  date = 20201018 , machine ids size = 242
+[2020-11-02 18:46:22.022] [com.ppio.data.bill.MyTask] [async-service-3] [36] [INFO ]  start  date = 20201019 , machine ids size = 236
+[2020-11-02 18:46:25.025] [com.ppio.data.bill.MyTask] [async-service-2] [36] [INFO ]  start  date = 20201020 , machine ids size = 238
+[2020-11-02 18:46:47.047] [com.ppio.data.bill.MyTask] [async-service-1] [97] [INFO ] success  finish one day date = 20201016
+[2020-11-02 18:46:50.050] [com.ppio.data.bill.MyTask] [async-service-4] [97] [INFO ] success  finish one day date = 20201017
+[2020-11-02 18:46:52.052] [com.ppio.data.bill.MyTask] [async-service-3] [97] [INFO ] success  finish one day date = 20201019
+[2020-11-02 18:46:52.052] [com.ppio.data.bill.MyTask] [async-service-5] [97] [INFO ] success  finish one day date = 20201018
+[2020-11-02 18:46:57.057] [com.ppio.data.bill.MyTask] [async-service-2] [97] [INFO ] success  finish one day date = 20201020
+[2020-11-02 18:47:14.014] [com.ppio.data.bill.MyTask] [async-service-1] [36] [INFO ]  start  date = 20201021 , machine ids size = 232
+[2020-11-02 18:47:18.018] [com.ppio.data.bill.MyTask] [async-service-4] [36] [INFO ]  start  date = 20201022 , machine ids size = 230
+[2020-11-02 18:47:20.020] [com.ppio.data.bill.MyTask] [async-service-3] [36] [INFO ]  start  date = 20201023 , machine ids size = 226
+[2020-11-02 18:47:20.020] [com.ppio.data.bill.MyTask] [async-service-5] [36] [INFO ]  start  date = 20201024 , machine ids size = 232
+[2020-11-02 18:47:25.025] [com.ppio.data.bill.MyTask] [async-service-2] [36] [INFO ]  start  date = 20201025 , machine ids size = 222
+[2020-11-02 18:47:45.045] [com.ppio.data.bill.MyTask] [async-service-1] [97] [INFO ] success  finish one day date = 20201021
+[2020-11-02 18:47:51.051] [com.ppio.data.bill.MyTask] [async-service-4] [97] [INFO ] success  finish one day date = 20201022
+[2020-11-02 18:47:51.051] [com.ppio.data.bill.MyTask] [async-service-3] [97] [INFO ] success  finish one day date = 20201023
+[2020-11-02 18:47:52.052] [com.ppio.data.bill.MyTask] [async-service-5] [97] [INFO ] success  finish one day date = 20201024
+[2020-11-02 18:47:56.056] [com.ppio.data.bill.MyTask] [async-service-2] [97] [INFO ] success  finish one day date = 20201025
+[2020-11-02 18:48:14.014] [com.ppio.data.bill.MyTask] [async-service-1] [36] [INFO ]  start  date = 20201026 , machine ids size = 220
+[2020-11-02 18:48:22.022] [com.ppio.data.bill.MyTask] [async-service-3] [36] [INFO ]  start  date = 20201028 , machine ids size = 203
+[2020-11-02 18:48:22.022] [com.ppio.data.bill.MyTask] [async-service-4] [36] [INFO ]  start  date = 20201027 , machine ids size = 218
+[2020-11-02 18:48:24.024] [com.ppio.data.bill.MyTask] [async-service-5] [36] [INFO ]  start  date = 20201029 , machine ids size = 206
+[2020-11-02 18:48:25.025] [com.ppio.data.bill.MyTask] [async-service-2] [36] [INFO ]  start  date = 20201030 , machine ids size = 205
+[2020-11-02 18:48:43.043] [com.ppio.data.bill.MyTask] [async-service-1] [97] [INFO ] success  finish one day date = 20201026
+[2020-11-02 18:48:51.051] [com.ppio.data.bill.MyTask] [async-service-4] [97] [INFO ] success  finish one day date = 20201027
+[2020-11-02 18:48:51.051] [com.ppio.data.bill.MyTask] [async-service-3] [97] [INFO ] success  finish one day date = 20201028
+[2020-11-02 18:48:52.052] [com.ppio.data.bill.MyTask] [async-service-5] [97] [INFO ] success  finish one day date = 20201029
+[2020-11-02 18:48:54.054] [com.ppio.data.bill.MyTask] [async-service-2] [97] [INFO ] success  finish one day date = 20201030
+[2020-11-02 18:48:57.057] [com.ppio.data.bill.MyTask] [async-service-1] [36] [INFO ]  start  date = 20201031 , machine ids size = 200
+[2020-11-02 18:49:14.014] [com.ppio.data.bill.MyTask] [async-service-1] [97] [INFO ] success  finish one day date = 20201031
